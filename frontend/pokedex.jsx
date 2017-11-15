@@ -4,9 +4,10 @@ import configureStore from './store/store';
 
 // Comment out later
 import * as ApiUtil from './util/api_util';
-import { receiveAllPokemon } from './actions/pokemon_actions';
+import { receiveAllPokemon, requestAllPokemon } from './actions/pokemon_actions';
 window.apiUtil = ApiUtil;
 window.receiveAllPokemon = receiveAllPokemon;
+window.requestAllPokemon = requestAllPokemon;
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
